@@ -1,0 +1,329 @@
+.center {
+    @include centerEvaluate ($widthSiteDesctop);
+}
+
+.header {
+    margin-top: 44px;
+    margin-bottom: 57px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+.menu__itemLink {
+    @include textDecoration ("Jost", 400, 20px);
+        color: $mainTextColor;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &__image {
+        width: 34px;
+    }
+    &__text{        
+        @include textDecoration ("DM Serif Display", 400, 40px);
+        color: $mainTextColor;
+    }
+}
+.bunner {
+    margin-bottom: 96px;
+    &__image {
+        position: relative;
+        &__image {
+            max-width: 100%;
+            border-radius: 60px;
+        }
+    }
+    &__content {
+        width: 434px;
+        position: absolute;
+        z-index: 100;
+        left: 52px;
+        top: 208px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+    &__contentHeader {
+        @include textDecoration ("DM Serif Display", 400, 65px);
+        color: $mainTextColor;
+    }
+    &__contentText {
+        @include textDecoration ("Jost", 400, 22px);
+        color: $mainTextColor;
+    }
+    &__contentButton {
+        width: 220px;
+        height: 75px;
+        display: flex;
+        flex-direction: row;    justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: $mainTextColor;
+        border-radius: 20px;
+        &__text {
+            @include textDecoration ("Jost", 600, 18px);
+        color: white;
+        }
+    }
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 96px;
+    gap: 93px;
+    &__heading {
+        width: 737px; //61%
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+    &__headingHeader {
+        @include textDecoration ("DM Serif Display", 400, 50px);
+        color: $mainTextColor;
+    }
+    &__headingText {
+        @include textDecoration ("Jost", 400, 22px);
+        color: $mainTextColor;
+        text-align: center;
+    }
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 56px;
+    }
+    &__contentItem {
+        width: 548px;
+        &__image {
+            width: 100%;
+            padding-bottom: 24px;
+        }
+        &__description {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &__header {
+            @include textDecoration ("DM Serif Display", 400, 25px);
+        color: $mainTextColor;
+        }
+        &__descText {
+            @include textDecoration ("Jost", 400, 22px);
+        color: $mainTextColor;
+        }
+        &__button {
+            width: 70px;
+            height: 70px;
+            background-color: $arrowButtonBGColor;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__button img {
+            height: 18px;
+        }
+    }
+}
+
+.image-top-left {
+    border-radius:  0 75px 0 0;
+}
+
+.image-top-right {
+    border-radius:  75px 0 0 0;
+}
+
+.image-bottom-left {
+    border-radius:  0 0 75px 0;
+}
+
+.image-bottom-right {
+    border-radius:  0 0 0 75px;
+}
+
+.counter {
+    background-color: $arrowButtonBGColor;
+    padding-top: 151px;
+    padding-bottom: 151px;
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: row;
+    &__item {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left-width: 2px;
+        border-left-style: solid;
+        border-left-color: $arrowButtonBGColor;
+        &__count {
+            @include textDecoration ("DM Serif Display", 400, 85px);
+            color: $counterNumberColor;
+        }
+        &__text {
+            @include textDecoration ("Jost", 400, 22px);
+            color: $mainTextColor;
+        }
+
+    }
+}
+
+.blog {
+    margin-bottom: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+    &__heading {
+        width: 811px;
+        height: 141px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    &__headingHeader {
+        @include textDecoration ("DM Serif Display", 400, 50px);
+        color: $mainTextColor;
+    }
+    &__headingText {
+        @include textDecoration ("Jost", 400, 22px);
+        color: $mainTextColor;
+        text-align: center;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 27px;
+
+    }
+    &__item {
+        width: 382px;
+        height: 521px;
+        padding-top: 21px;
+        border: 1px solid $blogBorderColor;
+        border-radius: 75px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__content {
+            width: 340px;
+            height: 190px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+        &__heading {
+            width: 300px;
+            @include textDecoration ("DM Serif Display", 400, 25px);
+            color: $mainTextColor;
+        }
+        &__attributes {
+            margin-bottom: 17px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+        &__attrText {
+            @include textDecoration ("Jost", 400, 16px);
+            color: $mainTextColor;
+        }
+        &__attrButton {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $arrowButtonBGColor;
+            border-radius: 50%;
+        }
+        &__attrButton img {
+            height: 13px;
+        }
+        
+    }
+    &__itemImage {
+        position: relative;
+        &__image {
+            border-radius: 50px 50px 0 0;
+        }
+        &__decoration {
+            position: absolute;
+            left: 20px;
+            top: 228px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 124px;
+            height: 41px;
+            background-color: $blogHintColor;
+            border-radius: 5px 5px 5px 0; 
+            @include textDecoration ("Jost", 400, 16px);
+            color: $blogHintTextColor;
+        }
+    }
+
+}
+
+.invert {
+    background-color: $arrowButtonBGColor;
+}
+
+.invert2 {
+    background-color: $blogHintColor;
+}
+
+.footer {
+    margin-bottom: 134px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__item {
+        width: 382px;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            gap: 31px;
+        }
+        &__heading {
+            @include textDecoration ("DM Serif Display", 400, 25px);
+            color: $mainTextColor;
+        }
+        &__text {
+            @include textDecoration ("Jost", 400, 22px);
+            color: $mainTextColor;
+        }
+    }
+    &__link {
+        color: $mainTextColor;
+    }
+}
+
+.socialNetslogos {
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
+}

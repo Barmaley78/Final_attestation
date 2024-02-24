@@ -1,0 +1,408 @@
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  margin-top: 44px;
+  margin-bottom: 57px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.menu__itemLink {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo__image {
+  width: 34px;
+}
+.logo__text {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 40px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+
+.bunner {
+  margin-bottom: 96px;
+}
+.bunner__image {
+  position: relative;
+}
+.bunner__image__image {
+  max-width: 100%;
+  border-radius: 60px;
+}
+.bunner__content {
+  width: 434px;
+  position: absolute;
+  z-index: 100;
+  left: 52px;
+  top: 208px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.bunner__contentHeader {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 65px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.bunner__contentText {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.bunner__contentButton {
+  width: 220px;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #292F36;
+  border-radius: 20px;
+}
+.bunner__contentButton__text {
+  font-family: "Jost";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  font-style: normal;
+  color: white;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 96px;
+  gap: 93px;
+}
+.project__heading {
+  width: 737px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.project__headingHeader {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.project__headingText {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+  text-align: center;
+}
+.project__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 56px;
+}
+.project__contentItem {
+  width: 548px;
+}
+.project__contentItem__image {
+  width: 100%;
+  padding-bottom: 24px;
+}
+.project__contentItem__description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.project__contentItem__header {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.project__contentItem__descText {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.project__contentItem__button {
+  width: 70px;
+  height: 70px;
+  background-color: #F4F0EC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__contentItem__button img {
+  height: 18px;
+}
+
+.image-top-left {
+  border-radius: 0 75px 0 0;
+}
+
+.image-top-right {
+  border-radius: 75px 0 0 0;
+}
+
+.image-bottom-left {
+  border-radius: 0 0 75px 0;
+}
+
+.image-bottom-right {
+  border-radius: 0 0 0 75px;
+}
+
+.counter {
+  background-color: #F4F0EC;
+  padding-top: 151px;
+  padding-bottom: 151px;
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: row;
+}
+.counter__item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: #F4F0EC;
+}
+.counter__item__count {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 85px;
+  line-height: normal;
+  font-style: normal;
+  color: #CDA274;
+}
+.counter__item__text {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+
+.blog {
+  margin-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 52px;
+}
+.blog__heading {
+  width: 811px;
+  height: 141px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog__headingHeader {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 50px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.blog__headingText {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+  text-align: center;
+}
+.blog__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 27px;
+}
+.blog__item {
+  width: 382px;
+  height: 521px;
+  padding-top: 21px;
+  border: 1px solid #E7E7E7;
+  border-radius: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog__item__content {
+  width: 340px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog__item__heading {
+  width: 300px;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.blog__item__attributes {
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.blog__item__attrText {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.blog__item__attrButton {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4F0EC;
+  border-radius: 50%;
+}
+.blog__item__attrButton img {
+  height: 13px;
+}
+.blog__itemImage {
+  position: relative;
+}
+.blog__itemImage__image {
+  border-radius: 50px 50px 0 0;
+}
+.blog__itemImage__decoration {
+  position: absolute;
+  left: 20px;
+  top: 228px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 124px;
+  height: 41px;
+  background-color: white;
+  border-radius: 5px 5px 5px 0;
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  font-style: normal;
+  color: #4D5053;
+}
+
+.invert {
+  background-color: #F4F0EC;
+}
+
+.invert2 {
+  background-color: white;
+}
+
+.footer {
+  margin-bottom: 134px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer__item {
+  width: 382px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.footer__item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+}
+.footer__item__heading {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.footer__item__text {
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: normal;
+  font-style: normal;
+  color: #292F36;
+}
+.footer__link {
+  color: #292F36;
+}
+
+.socialNetslogos {
+  display: flex;
+  flex-direction: row;
+  gap: 54px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
