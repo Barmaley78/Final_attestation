@@ -18,7 +18,7 @@
     }
 }
 .menu__itemLink {
-    @include textDecoration ("Jost", 400, 20px);
+    @include textDecoration ("Jost", 400, 20px, 125%);
         color: $mainTextColor;
 }
 .logo {
@@ -29,7 +29,7 @@
         width: 34px;
     }
     &__text{        
-        @include textDecoration ("DM Serif Display", 400, 40px);
+        @include textDecoration ("DM Serif Display", 400, 40px, 125%);
         color: $mainTextColor;
     }
 }
@@ -53,11 +53,11 @@
         gap: 18px;
     }
     &__contentHeader {
-        @include textDecoration ("DM Serif Display", 400, 65px);
+        @include textDecoration ("DM Serif Display", 400, 65px, 125%);
         color: $mainTextColor;
     }
     &__contentText {
-        @include textDecoration ("Jost", 400, 22px);
+        @include textDecoration ("Jost", 400, 22px, 150%, 1%);
         color: $mainTextColor;
     }
     &__contentButton {
@@ -70,7 +70,7 @@
         background-color: $mainTextColor;
         border-radius: 20px;
         &__text {
-            @include textDecoration ("Jost", 600, 18px);
+            @include textDecoration ("Jost", 600, 18px, 125%, 2%);
         color: white;
         }
     }
@@ -90,11 +90,11 @@
         gap: 8px;
     }
     &__headingHeader {
-        @include textDecoration ("DM Serif Display", 400, 50px);
+        @include textDecoration ("DM Serif Display", 400, 50px, 125%, 2%);
         color: $mainTextColor;
     }
     &__headingText {
-        @include textDecoration ("Jost", 400, 22px);
+        @include textDecoration ("Jost", 400, 22px, 150%, 1%);
         color: $mainTextColor;
         text-align: center;
     }
@@ -116,11 +116,11 @@
             justify-content: space-between;
         }
         &__header {
-            @include textDecoration ("DM Serif Display", 400, 25px);
+            @include textDecoration ("DM Serif Display", 400, 25px, 125%, 2%);
         color: $mainTextColor;
         }
         &__descText {
-            @include textDecoration ("Jost", 400, 22px);
+            @include textDecoration ("Jost", 400, 22px, 150%, 1%);
         color: $mainTextColor;
         }
         &__button {
@@ -163,19 +163,22 @@
     flex-direction: row;
     &__item {
         width: 25%;
+        text-align: center;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        border-left-width: 2px;
-        border-left-style: solid;
-        border-left-color: $arrowButtonBGColor;
+        & {
+            display: inline-block;
+            border-right: 1px solid #cda274;
+            padding-right: 60px;
+         }
+         &:last-child {
+            border-right: none;
+         }
         &__count {
-            @include textDecoration ("DM Serif Display", 400, 85px);
+            @include textDecoration ("DM Serif Display", 400, 85px, 125%, 2%);
             color: $counterNumberColor;
         }
         &__text {
-            @include textDecoration ("Jost", 400, 22px);
+            @include textDecoration ("Jost", 400, 22px, 150%, 1%);
             color: $mainTextColor;
         }
 
@@ -198,19 +201,20 @@
 
     }
     &__headingHeader {
-        @include textDecoration ("DM Serif Display", 400, 50px);
+        @include textDecoration ("DM Serif Display", 400, 50px, 125%, 2%);
         color: $mainTextColor;
     }
     &__headingText {
-        @include textDecoration ("Jost", 400, 22px);
+        @include textDecoration ("Jost", 400, 22px, 150%, 1%);
         color: $mainTextColor;
         text-align: center;
     }
     &__content {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        gap: 27px;
+        // gap: 25px;
 
     }
     &__item {
@@ -233,7 +237,7 @@
         }
         &__heading {
             width: 300px;
-            @include textDecoration ("DM Serif Display", 400, 25px);
+            @include textDecoration ("DM Serif Display", 400, 25px, 125%, 2%);
             color: $mainTextColor;
         }
         &__attributes {
@@ -245,7 +249,7 @@
 
         }
         &__attrText {
-            @include textDecoration ("Jost", 400, 16px);
+            @include textDecoration ("Jost", 400, 16px, 150%, 1%);
             color: $mainTextColor;
         }
         &__attrButton {
@@ -278,7 +282,7 @@
             height: 41px;
             background-color: $blogHintColor;
             border-radius: 5px 5px 5px 0; 
-            @include textDecoration ("Jost", 400, 16px);
+            @include textDecoration ("Jost", 400, 16px, 150%, 1%);
             color: $blogHintTextColor;
         }
     }
@@ -291,6 +295,7 @@
 
 .invert2 {
     background-color: $blogHintColor;
+    border: 2px solid $arrowButtonBGColor;
 }
 
 .footer {
@@ -298,22 +303,39 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    &__item {
-        width: 382px;
+    &__logo {
+        width: 394px;
         display: flex;
         flex-direction: column;
         gap: 31px;
+    }
+    &__menu {
+        width: 123px;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+    }
+    &__spacing {
+        width: 123px;
+    }
+    &__contact {
+        width: 260px;
+        display: flex;
+        flex-direction: column;
+        gap: 31px;
+    }
+    &__item {
         &__content {
             display: flex;
             flex-direction: column;
             gap: 31px;
         }
         &__heading {
-            @include textDecoration ("DM Serif Display", 400, 25px);
+            @include textDecoration ("DM Serif Display", 400, 25px, 125%);
             color: $mainTextColor;
         }
         &__text {
-            @include textDecoration ("Jost", 400, 22px);
+            @include textDecoration ("Jost", 400, 22px, 150%, 1%);
             color: $mainTextColor;
         }
     }

@@ -1,12 +1,12 @@
 @import '_vars';
 @import '_mixins';
 @import 'index';
+@import '_blog';
 
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 a {

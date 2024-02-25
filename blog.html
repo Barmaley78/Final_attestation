@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header center">
+        <div class="logo">
+            <img class="logo__image" src="./images/intereno_logo.svg" alt="Interno logotype">
+            <span class="logo__text">Interno</span>
+        </div>
+        <div class="header__menu">
+            <p class="menu__item"><a class="menu__itemLink" href="index.html">Home</a></p>
+            <p class="menu__item"><a class="menu__itemLink" href="#">Progect</a></p>
+            <p class="menu__item"><a class="menu__itemLink" href="#">Blog</a></p>
+        </div>
+    </header>
+
+    <section class="blogBunner center">
+        <div class="blogBunner__image">
+            <img class="blogBunner__image__image" src="./images/blog_header.jpg" alt="banner">
+            <div class="blogBunner__content">
+                <h2 class="blogBunner__contentHeader">Articles & News</h2>
+                <p class="blogBunner__contentText">Home / Blog</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blogSection center">
+        <div class="latestPost">
+            <p class="latestPost__header">Latest Post</p>
+            <div class="latestPost__content">
+                <img src="./images/banner_blog.jpg" alt="latest post image1" class="latestPost__content__image">
+                <div class="latestPost__content__description">
+                    <h3 class="postHeading">Low Cost Latest Invented Interior Designing Ideas</h3>
+                    <p class="postText">Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpis dignissim maximus.posuere in.Contrary to popular belief.</p>
+                    <p class="postText">Lorem Ipsum is not simply random text. It has roots in a piece of classica.</p>
+                    <div class="postFooter">
+                        <div class="blog__item__attrText">26 December,2022</div>
+                        <div class="blog__item__attrButton">
+                            <img src="./images/button_vector.svg" alt="button arrow">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="app" class="news">
+            <p class="latestPost__header">Articles & News</p>
+            <div class="blog__content">
+                <div v-for="blog in blogs" class="blog__item">
+                    <div class="blog__itemImage">
+                        <img class="blog__itemImage__image" v-bind:src="blog.image" alt="">
+                        <div class="blog__itemImage__decoration">{{ blog.buttonText }}</div>
+                    </div>
+                    <div class="blog__item__content">
+                    <h3 class="blog__item__heading">{{ blog.headingText }}</h3>
+                    <div class="blog__item__attributes">
+                        <div class="blog__item__attrText">{{ blog.descriptionText }}</div>
+                        <div class="blog__item__attrButton">
+                            <img src="./images/button_vector.svg" alt="button arrow">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="aligning">
+                <div class="news__pages">
+                    <div class="blog__item__attrButton">
+                        <p class="caruselText">01</p>
+                    </div>
+                    <div class="blog__item__attrButton invert2">
+                        <p class="caruselText">02</p>
+                    </div>
+                    <div class="blog__item__attrButton invert2">
+                        <p class="caruselText">03</p>
+                    </div>
+                    <div class="blog__item__attrButton invert2">
+                        <img src="./images/button_vector.svg" alt="button arrow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer center">
+        
+        <div class="footer__logo">
+            <div class="logo">
+                <img class="logo__image" src="./images/intereno_logo.svg" alt="Interno logotype">
+                <span class="logo__text">Interno</span>
+            </div>
+            <p class="footer__item__text">It is a long established fact that a reader will be distracted lookings.</p>
+            <div class="socialNetslogos">
+                <img src="./images/twitter_logo.svg" alt="twitter">
+                <img src="./images/in_logo.svg" alt="in">
+            </div>
+        </div>
+        
+        <div class="footer__menu">
+            <div class="footer__item__heading">
+                <h5>Pages</h5>
+            </div>
+            <div class="footer__item__content">
+                <p class="footer__item__text"><a class="footer__link" href="#">Home</a></p>
+                <p class="footer__item__text"><a class="footer__link" href="#">Project</a></p>
+                <p class="footer__item__text"><a class="footer__link" href="blog.html">Blog</a></p>
+            </div>
+        </div>
+
+        <div class="footer__spacing"></div>
+        
+        <div class="footer__contact">
+            <div class="footer__item__heading">
+                <h5>Contact</h5>
+            </div>
+            <div class="footer__item__content">
+                <p class="footer__item__text">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+                <p class="footer__item__text">contact@interno.com</p>
+                <p class="footer__item__text">(123) 456 - 7890</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="blog.js"></script>
+</body>
+</html>

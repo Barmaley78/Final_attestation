@@ -1,0 +1,112 @@
+.blogBunner {
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__image {
+        position: relative;
+        top: -12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__content {
+        bottom: 0px;
+        position: absolute;
+        width: 503px;
+        height: 178px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $blogHintColor;
+        border-radius: 50px 50px 0 0;
+    }
+    &__contentHeader {
+        @include textDecoration ("DM Serif Display", 400, 50px, 125%);
+        color: $mainTextColor;
+    }
+    &__contentText {
+        @include textDecoration ("Jost", 400, 22px, 105%, 1%);
+            color: $mainTextColor;
+    }
+}
+
+.blogSection {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
+.news {
+    margin-bottom: 200px;
+}
+
+.latestPost {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+    &__header {
+        @include textDecoration ("DM Serif Display", 400, 50px, 125%, 2%);
+        color: $mainTextColor;
+    }
+    &__content {
+        padding: 22px;
+        border: 1px solid $blogBorderColor;
+        border-radius: 75px;
+        display: flex;
+        flex-direction: row;
+        gap: 65px;
+        &__image {
+            border-radius: 50px;
+        }
+        &__description {
+            padding-top: 52px;
+            padding-bottom: 52px;
+            width: 470px;
+            height: 375px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}
+
+.postHeading {
+    @include textDecoration ("DM Serif Display", 400, 25px, 125%, 2%);
+    color: $mainTextColor;
+}
+
+.postText {
+    @include textDecoration ("Jost", 400, 22px, 150%, 1%);
+    color: $mainTextColor;
+}
+
+.postFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    &__pages {
+        padding-top: 21px;
+        width: 268px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.aligning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.caruselText {
+    @include textDecoration ("Jost", 500, 16px, 150%);
+    color: $mainTextColor;
+}
