@@ -210,11 +210,9 @@
         text-align: center;
     }
     &__content {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        // gap: 27px;
+        display: grid;
+        grid-template-columns: repeat(3, 382px);
+        gap: 27px;
 
     }
     &__item {
@@ -261,6 +259,22 @@
             background-color: $arrowButtonBGColor;
             border-radius: 50%;
         }
+        &__attrButton-inv {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $blogHintColor;
+            border: 2px solid $arrowButtonBGColor;
+            border-radius: 50%;
+            &#selected {
+                background-color: $arrowButtonBGColor;
+                border: none;
+            }
+        }
+
+
         &__attrButton img {
             height: 13px;
         }
