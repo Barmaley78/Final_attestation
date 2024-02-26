@@ -339,6 +339,13 @@
 .blog__item__attrButton img {
   height: 13px;
 }
+.blog__item:nth-child(2) {
+  background-color: #F4F0EC;
+}
+.blog__item:nth-child(2) #button {
+  background-color: white;
+  border: 2px solid #F4F0EC;
+}
 .blog__itemImage {
   position: relative;
 }
@@ -363,15 +370,6 @@
   letter-spacing: 1%;
   font-style: normal;
   color: #4D5053;
-}
-
-.invert {
-  background-color: #F4F0EC;
-}
-
-.invert2 {
-  background-color: white;
-  border: 2px solid #F4F0EC;
 }
 
 .footer {

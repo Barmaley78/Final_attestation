@@ -214,7 +214,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
-        // gap: 25px;
+        // gap: 27px;
 
     }
     &__item {
@@ -264,6 +264,15 @@
         &__attrButton img {
             height: 13px;
         }
+        &:nth-child(2) {
+            background-color: $arrowButtonBGColor;
+        }
+
+        &:nth-child(2) #button {
+                background-color: $blogHintColor;
+                border: 2px solid $arrowButtonBGColor;
+        }
+        
         
     }
     &__itemImage {
@@ -287,15 +296,6 @@
         }
     }
 
-}
-
-.invert {
-    background-color: $arrowButtonBGColor;
-}
-
-.invert2 {
-    background-color: $blogHintColor;
-    border: 2px solid $arrowButtonBGColor;
 }
 
 .footer {
