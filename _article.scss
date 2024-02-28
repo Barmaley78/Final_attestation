@@ -1,0 +1,117 @@
+.blog-details__wrap {
+   margin-top: 200px;
+   display: flex;
+   flex-direction: row;
+   gap: 52px;
+}
+ 
+.blog-details {
+   width: 800px;
+}
+ 
+.article {
+   margin-bottom: 96px;
+   &__title {
+      @include textDecoration ("DM Serif Display", 400, 50px, 125%, 2%);
+      color: $mainTextColor;
+      margin-bottom: 20px;
+   }
+   &__img {
+      margin-top: 21px;
+      margin-bottom: 35px;
+      border-radius: 50px;
+   }
+   &__info {
+      margin-top: 11px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 46px;
+      @include textDecoration ("Jost", 400, 16px, 150%, 1%);
+      color: $mainTextColor;
+      text-transform: capitalize;
+   }
+   &__text {
+      @include textDecoration ("Jost", 400, 22px, 150%, 1%);
+      color: $mainTextColor;
+   }
+   &__list {
+      margin-top: 24px;
+      margin-bottom: 23px;
+      display: flex;
+      width: 732.389px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 32px;
+      list-style-position: 10px 0;
+      &-num {
+         display: flex;
+         align-items: flex-start;
+         gap: 14px;
+         &-text {
+            @include textDecoration ("DM Serif Display", 400, 20px, 125%, 2%);
+            color: $counterNumberColor;
+         }
+      }
+      &-item {
+         @include textDecoration ("Jost", 400, 22px, 150%, 1%);
+         color: $mainTextColor;
+      }
+   }
+}
+ 
+.tags {
+   &__buttons-wrap {
+      width: 345px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+   }
+   &__title {
+      @include textDecoration ("DM Serif Display", 400, 20px, 125%, 2%);
+      color: $counterNumberColor;
+   }
+   &__buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;      
+      gap: 10px;
+      &-item {
+         width: fit-content;
+         padding: 9px 30px;
+         cursor: pointer;
+         background: #f4f0ec;
+         border-radius: 10px;
+         border: none;
+         @include textDecoration ("Jost", 400, 18px, 125%, 2%);
+         color: $mainTextColor;
+         &#tag-selected {
+            background-color: $mainTextColor;
+        color: $blogHintColor;
+        }
+      }
+   }
+}
+ 
+.info-blok {
+   margin-bottom: 27px;
+   margin-top: 35px;
+   padding: 53px 227px;
+   background: #f4f0ec;
+   border-radius: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   &__quotation-marks {
+      width: 106px;
+      height: 133px;
+      flex-shrink: 0;
+      @include textDecoration ("DM Serif Display", 400, 200px, 125%, 2%, italic);
+      color: $counterNumberColor;
+   }
+   &__text {
+      text-align: center;
+      @include textDecoration ("DM Serif Display", 400, 25px, 125%, 2%, italic);
+      color: $counterNumberColor;
+   }
+}

@@ -45,5 +45,10 @@ const app = new Vue ({
                 descriptionText: '25 December,2022'
             }
         ]
+    },
+    methods: {
+        relocate() {
+            window.location.href ='./article.html';
+        }
     }
 });

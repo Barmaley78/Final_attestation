@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header center">
+        <div class="logo">
+            <img class="logo__image" src="./images/intereno_logo.svg" alt="Interno logotype">
+            <span class="logo__text">Interno</span>
+        </div>
+        <div class="header__menu">
+            <p class="menu__item"><a class="menu__itemLink" href="index.html">Home</a></p>
+            <p class="menu__item"><a class="menu__itemLink" href="#">Progect</a></p>
+            <p class="menu__item"><a class="menu__itemLink" href="#">Blog</a></p>
+        </div>
+    </header>
+
+    <section class="blogBunner center">
+        <div class="blogBunner__image">
+            <img class="blogBunner__image__image" src="./images/article_header.jpg" alt="banner">
+        </div>
+    </section>
+
+    <section class="blog-details-page center">
+        <article-components></article-components>
+    </section>
+    
+    <footer class="footer center">
+        
+        <div class="footer__logo">
+            <div class="logo">
+                <img class="logo__image" src="./images/intereno_logo.svg" alt="Interno logotype">
+                <span class="logo__text">Interno</span>
+            </div>
+            <p class="footer__item__text">It is a long established fact that a reader will be distracted lookings.</p>
+            <div class="socialNetslogos">
+                <img src="./images/twitter_logo.svg" alt="twitter">
+                <img src="./images/in_logo.svg" alt="in">
+            </div>
+        </div>
+        
+        <div class="footer__menu">
+            <div class="footer__item__heading">
+                <h5>Pages</h5>
+            </div>
+            <div class="footer__item__content">
+                <p class="footer__item__text"><a class="footer__link" href="index.html">Home</a></p>
+                <p class="footer__item__text"><a class="footer__link" href="#">Project</a></p>
+                <p class="footer__item__text"><a class="footer__link" href="#">Blog</a></p>
+            </div>
+        </div>
+
+        <div class="footer__spacing"></div>
+        
+        <div class="footer__contact">
+            <div class="footer__item__heading">
+                <h5>Contact</h5>
+            </div>
+            <div class="footer__item__content">
+                <p class="footer__item__text">55 East Birchwood Ave. Brooklyn, New York 11201</p>
+                <p class="footer__item__text">contact@interno.com</p>
+                <p class="footer__item__text">(123) 456 - 7890</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+    <script src="article.js"></script>
+</body>
+</html>
